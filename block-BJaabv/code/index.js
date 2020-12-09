@@ -8,8 +8,9 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
+function calculateDogAge(puppyAge , conversion =7) {
   // Your code goes here
+  return puppyAge * conversion;
 }
 
 /*
@@ -19,8 +20,11 @@ function calculateDogAge() {
   * [ ] Return the total number of movie you will watch.
 */
 
-function calculateMoviesToWatch() {
+function calculateMoviesToWatch(age , movies) {
   // Your code goes here
+  let maxAge = 80;
+  let totalMovies =  (maxAge - age) * 12 * 4 * movies;
+  return  totalMovies;
 }
 
 /*
