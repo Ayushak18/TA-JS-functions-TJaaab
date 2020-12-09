@@ -32,13 +32,13 @@ isInRange(1, 10, 19); // false
 */
 
 function isInRange(number, lower, upper) {
-  return lower < number && number < upper ? `True` : "False";
+  return lower < number && number < upper ;
 }
 
 // - Write a Function Decleration for above problem
 // Your code
 let isInRange = function (number, lower, upper) {
-  return lower < number && number < upper ? `True` : "False";
+  return lower < number && number < upper;
 };
 
 // - Execute the function with required parameter
@@ -72,7 +72,7 @@ function calculateBMI(weight, height) {
     return `normal`;
   } else if (bmi > 24.9 && bmi < 29.9) {
     return `overweight`;
-  } else {
+  } else if(bmi >29.9) {
     return `obese`;
   }
 }
